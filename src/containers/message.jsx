@@ -3,15 +3,21 @@ import React,{ Component } from 'react';
 class Message extends Component {
 
     render(){
-        return(
-            <div className="message">
-                <div className="message-header">
-                    <h4>name</h4>
-                    <span>date</span>
+        if (this.props.message !== undefined){
+            return(
+                <div className="message">
+                    <div className="message-header">
+                        <h4>{this.props.message.author}</h4>
+                        <span>{this.props.message.created_at}</span>
+                    </div>
+                    <p>{this.props.message.content}</p>
                 </div>
-                <p>content</p>
-            </div>
-        );
+            );
+        } else {
+            return(
+                <div></div>
+            );
+        }
     }
 }
 

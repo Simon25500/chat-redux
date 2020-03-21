@@ -29,6 +29,38 @@ body {
     p{
       font-weight: bold;
     }
+
+
+    .add {
+      display: block;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &:hover {
+        color: #000000;
+        transform: scale(1.04);
+      }
+
+      
+      
+    }
+    
+    .channel{
+      display: block;
+      cursor: pointer;
+      &:hover{
+        color: #000000;
+        transform: scale(1.04);
+      }
+    }
+
+    .selected{
+      text-decoration: underline;
+    }
+
+
+    .add-input{
+      display: flex;
+    }
   }
 
   .chat{
